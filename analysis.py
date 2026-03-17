@@ -53,8 +53,8 @@ monthly = df.groupby(['Year','Month'])['Sales'].sum().reset_index()
 
 plt.figure(figsize=(12, 4))
 for year in monthly['Year'].unique():
-    data = monthly[monthly['Year'] == year]
-    plt.plot(data['Month'], data['Sales'], marker='o', label=str(year))
+        data = monthly[monthly['Year'] == year]
+        plt.plot(data['Month'], data['Sales'], marker='o', label=str(year))
 plt.title('Monthly Sales Trend by Year')
 plt.xlabel('Month')
 plt.ylabel('Sales ($)')
