@@ -1,75 +1,121 @@
 # 📊 Business KPI Dashboard — Superstore Sales Analysis
 
-## 📌 Overview
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=python&logoColor=white)
 
-This project presents an end-to-end data analysis of the Superstore Sales dataset, focusing on extracting actionable business insights through data cleaning, exploratory analysis, SQL querying, and interactive dashboarding.
-
-It demonstrates the complete analytics workflow—from raw data processing to decision-ready visualizations.
+An end-to-end business analytics project on the Superstore Sales dataset — covering data cleaning, SQL-based insight extraction, and an interactive Power BI KPI dashboard for decision-making.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 📸 Dashboard Preview
 
-* **Python (Pandas, Matplotlib)** — Data cleaning, preprocessing, and exploratory data analysis
-* **SQL (SQLite)** — Business queries and insight extraction
-* **Power BI** — Interactive KPI dashboard and data visualization
+![Dashboard](dashboard.jpeg)
 
 ---
 
 ## 📈 Key Business Insights
 
-* **Total Sales:** $2.30M (2014–2017), with ~52% year-over-year growth
-* **Profit Margin:** 12.47% overall
-* **Top Region:** West contributes **31.58%** of total revenue
-* **Loss-Making Products:** Tables and Bookcases show consistent losses despite high sales
-* **Top Category:** Technology leads in both sales and profitability
+| Metric | Value |
+|---|---|
+| Total Sales (2014–2017) | **$2.30M** |
+| Year-over-Year Growth | **~52%** |
+| Overall Profit Margin | **12.47%** |
+| Top Region by Revenue | **West — 31.58%** |
+| Top Category | **Technology** (highest sales & profit) |
+| Loss-Making Products | **Tables & Bookcases** (high sales, negative profit) |
 
 ---
 
 ## 📊 Dashboard Highlights
 
-* KPI cards for **Total Sales, Profit, Quantity, and Margin**
-* Region-wise sales distribution
-* Category performance comparison
-* Yearly sales trend analysis
-* Customer-level sales and profit breakdown
+- KPI cards for **Total Sales, Profit, Quantity, and Margin**
+- Region-wise sales distribution
+- Category & sub-category performance comparison
+- Yearly and monthly sales trend analysis
+- Customer-level sales and profit breakdown
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| Python (Pandas, Matplotlib) | Data cleaning, preprocessing, EDA |
+| SQLite | Business query execution and insight extraction |
+| Power BI | Interactive KPI dashboard and visualization |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-├── analysis.py                     # Data cleaning & exploratory analysis (Python)
+Superstore-KPI-Dashboard/
+│
+├── analysis.py                    # Data cleaning & exploratory analysis
 ├── queries.py                     # SQL queries for business insights
-├── Superstore_KPI_Dashboard.pbix  # Power BI dashboard file
-├── monthly_trend.png              # Monthly sales trend visualization
+├── Superstore_KPI_Dashboard.pbix  # Power BI dashboard
+├── Sample - Superstore.csv        # Raw dataset
+├── superstore_cleaned.csv         # Cleaned dataset
+├── monthly_trend.png              # Monthly sales trend chart (Python)
+├── dashboard.jpeg                 # Dashboard screenshot
+└── README.md
 ```
 
 ---
 
-## 🚀 How to Use
+## ⚙️ How to Use
 
-1. Run `analysis.py` to preprocess and explore the dataset
-2. Execute `queries.py` to generate SQL-based insights
-3. Open `Superstore_KPI_Dashboard.pbix` in Power BI Desktop
-4. Interact with filters and visuals to explore insights
+**1. Clone the repository**
+```bash
+git clone https://github.com/Saksham3124/Superstore-KPI-Dashboard.git
+cd Superstore-KPI-Dashboard
+```
+
+**2. Install dependencies**
+```bash
+pip install pandas matplotlib
+```
+
+**3. Run data cleaning & EDA**
+```bash
+python analysis.py
+```
+
+**4. Run SQL business queries**
+```bash
+python queries.py
+```
+
+**5. Open the Power BI dashboard**
+
+Open `Superstore_KPI_Dashboard.pbix` in Power BI Desktop and refresh the data source to point to `superstore_cleaned.csv`.
 
 ---
 
 ## 🎯 Project Objective
 
 To simulate a real-world business analytics workflow by:
+- Cleaning and transforming raw retail sales data
+- Extracting actionable insights using SQL queries
+- Building an interactive dashboard for business decision-making
 
-* Cleaning and transforming raw data
-* Extracting meaningful insights using SQL
-* Building an interactive dashboard for decision-making
+---
+
+## 📌 Future Improvements
+
+- [ ] Sales forecasting model using time-series analysis
+- [ ] Profitability deep-dive by sub-category and customer segment
+- [ ] Enhanced dashboard with drill-through and what-if analysis
 
 ---
 
-## 📎 Future Improvements
+## 👤 Author
 
-* Add forecasting models for sales prediction
-* Integrate real-time data sources
-* Enhance dashboard with advanced KPIs and drill-through analysis
+**Kumar Saksham**
+B.Tech Student — BIT Mesra
 
----
+[![GitHub](https://img.shields.io/badge/GitHub-Saksham3124-181717?style=flat&logo=github)](https://github.com/Saksham3124)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kumar_Saksham-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/kumarsaksham)
